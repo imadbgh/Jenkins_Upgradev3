@@ -51,12 +51,12 @@ pipeline {
     post {
         success {
             // Actions to perform when the pipeline succeeds
-            sh 'Pipeline succeeded!'
+            echo 'Pipeline succeeded!'
         }
 
         failure {
             // Actions to perform when the pipeline fails
-            sh "Pipeline failed!"
+            echo "Pipeline failed!"
         }
     }    
 }
