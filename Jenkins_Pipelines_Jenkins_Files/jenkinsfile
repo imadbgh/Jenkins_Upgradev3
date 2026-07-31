@@ -1,7 +1,6 @@
 pipeline {
     agent any
-
-
+    
     environment {
         MY_ENV_VAR = "Custom Value"
     }
@@ -43,11 +42,12 @@ pipeline {
         stage ('Deploy') {
             steps {
                 // Deploy your application to a target environment (e.g., staging, production)
-                sh ' echo "Value of ENV Varaible Is"$MY_ENV_VAR"" ' 
+                sh 'echo "Value of ENV Varaible is "$MY_ENV_VAR""' 
             }
         }
-
     }
+
+
     post {
         success {
             // Actions to perform when the pipeline succeeds
