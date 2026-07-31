@@ -49,7 +49,7 @@ pipeline {
 
     }
     post {
-        sucesse {
+        success {
             // Actions to perform when the pipeline succeeds
             sh 'Pipeline succeeded!'
         }
